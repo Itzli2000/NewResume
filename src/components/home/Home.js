@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import MainSection from './MainSection';
 
 const Home = () => {
     return (
-        <div>
-            desde home
-        </div>
+        <Fragment>
+            <MainSection />
+        </Fragment>
     );
 };
 

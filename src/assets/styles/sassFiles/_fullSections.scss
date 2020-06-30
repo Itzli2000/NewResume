@@ -1,0 +1,187 @@
+.full-section {
+    width: 100vw;
+    min-height: calc(100vh - 50px);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    position: relative;
+
+    .back-container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 90;
+            background-color: rgba($secondary, 0.15);
+        }
+
+        .hills {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+
+            .hill-1 {
+                fill: #9ee493;
+            }
+
+            .hill-2 {
+                fill: #daf7dc;
+            }
+        }
+
+        .trees {
+            position: absolute;
+            right: 20%;
+            bottom: 5%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+
+        .cloud1 {
+            position: absolute;
+            right: -100%;
+            top: 20%;
+            z-index: 2;
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            animation: cloud1 20s;
+            -moz-animation: cloud1 20s;
+            -webkit-animation: cloud1 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            .cls-1 {
+                fill: #87bfff;
+            }
+        }
+
+        .cloud2 {
+            position: absolute;
+            right: -100%;
+            top: 20%;
+            z-index: 2;
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            animation: cloud1 25s;
+            -moz-animation: cloud1 25s;
+            -webkit-animation: cloud1 25s; 
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+            .cls-2 {
+                fill: #add7f6;
+            }
+        }
+    }
+
+
+    .main-section {
+        position: relative;
+        z-index: 100;
+        color: $black;
+
+        .avatar {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
+            
+            svg {
+                max-width: 150px;
+                height: auto;
+            }
+        }
+
+        .badge {
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 8px 10px;
+        }
+
+        p.typer {
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            font-weight: 300;
+
+            span {
+                font-weight: 400;
+            }
+        }
+
+        p.description {
+            max-width: 650px;
+        }
+    }
+}
+
+@keyframes cloud1 {
+    0% {
+        right: -100%
+    }
+
+    100% {
+        right: 100%
+    }
+}
+
+@keyframes cloud1 {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@-moz-keyframes cloud1 {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@-webkit-keyframes cloud1 {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 100%;
+    }
+}
