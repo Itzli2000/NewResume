@@ -9,7 +9,7 @@ const NavBar = (props) => {
     const { t } = useTranslation();
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark row">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark row">
             <div className="container">
                 <NavLink className="navbar-brand" activeClassName='active' to={`/home`}>{t('STR_00')}</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,9 @@ const NavBar = (props) => {
                     <ul className="navbar-nav align-items-center w-100">
                         <li className="nav-item">
                             <NavLink className="nav-link" activeClassName='active' to={`/home`}> {t('STR_3')}</NavLink>
+                        </li>
+                        <li className="nav-item dropdown">
+                            <a className="nav-link" href="#second">{t('STR_11')}</a>
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link" activeClassName='active' to={`/about`}> {t('STR_4')}</NavLink>
