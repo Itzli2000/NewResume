@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/styles/styles.scss';
+import 'animate.css';
 import './i18n';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

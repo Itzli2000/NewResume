@@ -1,13 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import MainSection from './MainSection';
 import SecondSection from './SecondSection';
 
 const Home = () => {
     return (
-        <Fragment>
+        <div className="animate__animated animate__fadeIn" >
             <MainSection />
             <SecondSection />
-        </Fragment>
+        </div>
     );
 };
 

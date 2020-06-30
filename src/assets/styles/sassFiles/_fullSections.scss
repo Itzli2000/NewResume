@@ -11,8 +11,9 @@
 .first {
     position: relative;
     background-image: url('../../images/lanscape.svg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 
     .back-container {
         width: 100%;
