@@ -132,17 +132,32 @@ button {
   @include customButton();
 }
 
-.navbar-brand {
-  font-size: 1.5rem;
-  position: relative;
+// Reset navbar styles
+#main-nav {
+  transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -ms-transitionbackground-color: 0.25s ease-in-out;
+  -o-transitiobackground-colorn: 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
 
-  &::after {
-    content: '.';
-    position: absolute;
-    right: -0.55rem;
-    bottom: -0.5rem;
-    color: $accent;
-    font-size: 3rem;
+  &.bg-light {
+    background-color: transparent !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    position: relative;
+
+    &::after {
+      content: '.';
+      position: absolute;
+      right: -0.55rem;
+      bottom: -0.5rem;
+      color: $accent;
+      font-size: 3rem;
+    }
   }
 }
 

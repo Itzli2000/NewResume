@@ -5,11 +5,12 @@ import { NavLink } from "react-router-dom";
 import LanguageSelector from './../../components/layout/LanguageSelector';
 
 const NavBar = (props) => {
+    // console.log(props)
 
     const { t } = useTranslation();
 
     return (
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark row">
+        <nav id="main-nav" className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark row">
             <div className="container">
                 <NavLink className="navbar-brand" activeClassName='active' to={`/home`}>{t('STR_00')}</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,13 +23,10 @@ const NavBar = (props) => {
                             <NavLink className="nav-link" activeClassName='active' to={`/home`}> {t('STR_3')}</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link" href="#second">{t('STR_11')}</a>
+                            <NavLink className="nav-link" activeClassName='active' to={`/work`}> {t('STR_4')}</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <NavLink className="nav-link" activeClassName='active' to={`/about`}> {t('STR_4')}</NavLink>
-                        </li>
-                        <li className="nav-item dropdown">
-                            <NavLink className="nav-link" activeClassName='active' to={`/work`}> {t('STR_5')}</NavLink>
+                            <NavLink className="nav-link" activeClassName='active' to={`/about`}> {t('STR_5')}</NavLink>
                         </li>
                         <li className="nav-item ml-auto mr-3">
                             <div >
