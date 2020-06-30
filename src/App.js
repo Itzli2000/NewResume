@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import AppRoutes from './routes/AppRoutes';
+// Components
+import LanguageSelector from './components/layout/LanguageSelector';
 
 const App = () => {
 
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
-  const changeLan = lang => {
-    i18n.changeLanguage(lang);
-  }
+  useEffect(() => {
+    /**
+     * On page load, verify user language and change it from english to spanish
+     * if user browser is set to spanish
+     */
+    var userLang = navigator.language || navigator.userLanguage;
+    if (userLang.includes('es')) {
+      setTimeout(() => {
+        i18n.changeLanguage('es');
+      }, 700);
+    }
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className="container-fluid">
-      <h1>{t('STR_1')}</h1>
-      <button
-      onClick={()=>changeLan('es')}
-      >Español</button>
-      <button
-      onClick={()=>changeLan('en')}
-      >Ingles</button>
+      <LanguageSelector/>
+      <AppRoutes/>
     </div>
   );
 }

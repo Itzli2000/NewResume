@@ -1,0 +1,55 @@
+.selector-container {
+    position: relative;
+
+    .selected-languague {
+        padding: 8px;
+        background-color: $secondary;
+        z-index: 100;
+        cursor: pointer;
+
+        .svgIcon {
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .options-language {
+        max-width: 200px;
+        width: 100vw;
+        background-color: $secondary;
+        padding: 10px 0;
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transform: translateY(0);
+        transition: all 0.5s ease-in-out;
+
+        &.show {
+            opacity: 1;
+            transform: translateY(100%);
+        }
+
+        .option {
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+
+            &.active {
+                background-color: rgba($accent, 0.6);
+            }
+
+            &:hover {
+                background-color: rgba($accent, 0.5);
+            }
+
+            .svgIcon {
+                width: 30px;
+                height: auto;
+                display: inline-block;
+            }
+        }
+
+    }
+}

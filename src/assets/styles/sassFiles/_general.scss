@@ -163,3 +163,19 @@ button {
     }
   }
 }
+
+// CSS transitions
+.show-enter {
+  opacity: 0;
+}
+.show-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.show-exit {
+  opacity: 1;
+}
+.show-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
