@@ -6,9 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+// Font family weights 300, 400, 600
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: $body_fz;
   background-color: $primary;
   color: $white;
@@ -35,37 +36,43 @@ table {
 h1,
 .h1 {
   font-size: $h1_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h2,
 .h2 {
   font-size: $h2_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h3,
 .h3 {
   font-size: $h3_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h4,
 .h4 {
   font-size: $h4_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h5,
 .h5 {
   font-size: $h5_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 h6,
 .h6 {
   font-size: $h6_font-size;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
 input[type=number] {
@@ -126,41 +133,10 @@ button {
   @include customButton();
 }
 
-.nav-tabs {
-  border: none;
-  margin-bottom: 1rem;
-
-  .nav-link {
-    font-size: 1.3rem;
-    color: $secondary;
-    transition: all 0.25s ease-in-out;
-
-    @media (max-width: 767px) {
-      max-width: 33%;
-      font-size: 1rem;
-      text-align: center;
-    }
-
-    &.active {
-      font-weight: 500;
-      color: $primary;
-      border: none;
-    }
-
-    &:after {
-      content: "";
-      padding: 0 1rem;
-      border-right: 1px solid $primary;
-    }
-
-    &:last-of-type:after {
-      content: none;
-    }
-
-    &:hover {
-      border-color: transparent;
-      color: rgba($secondary, 0.5);
-    }
+.navbar-brand {
+  font-size: 1.5rem;
+  span {
+    color: $accent;
   }
 }
 

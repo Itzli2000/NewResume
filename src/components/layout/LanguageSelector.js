@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ReactSVG } from 'react-svg';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -25,7 +25,7 @@ const LanguageSelector = () => {
     let imageLang = i18n.language === 'es' ? MX : US;
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-end selector-container">
+        <div className="selector-container row">
             <div className="selected-languague" onClick={showOptions}>
                 <ReactSVG className="svgIcon" src={imageLang}  />
             </div>

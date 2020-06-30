@@ -1,9 +1,13 @@
 .selector-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
     position: relative;
 
     .selected-languague {
         padding: 8px;
-        background-color: $secondary;
+        background-color: rgba($secondary, 0.3);
         z-index: 100;
         cursor: pointer;
 
@@ -19,7 +23,7 @@
         background-color: $secondary;
         padding: 10px 0;
         position: absolute;
-        z-index: 0;
+        z-index: -10;
         right: 0;
         bottom: 0;
         opacity: 0;

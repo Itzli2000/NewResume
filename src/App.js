@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import AppRoutes from './routes/AppRoutes';
 // Components
-import LanguageSelector from './components/layout/LanguageSelector';
 
 const App = () => {
 
@@ -24,8 +23,7 @@ const App = () => {
 
   return (
     <div className="container-fluid">
-      <LanguageSelector/>
-      <AppRoutes/>
+      <AppRoutes />
     </div>
   );
 }
