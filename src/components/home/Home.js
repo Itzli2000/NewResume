@@ -11,7 +11,7 @@ const Home = (props) => {
     const scrollTo = (element) => {
         setSection(element);
         let el = document.getElementById(element);
-        el.scrollIntoView({ behavior: "smooth" });
+        el.scrollIntoView();
     }
 
     return (

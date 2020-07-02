@@ -132,6 +132,42 @@ button {
   @include customButton();
 }
 
+// Scroll to top button
+.scroll-top {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  border: 1px solid $accent;
+  background-color: rgba($accent, 0.3);
+  color: $accent;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($accent, 1);
+    color: $white;
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}
+
 // Reset navbar styles
 #main-nav {
   transition: background-color 0.25s ease-in-out;
@@ -143,7 +179,7 @@ button {
   -o-transition: background-color 0.25s ease-in-out;
 
   &.bg-light {
-    background-color: transparent !important;
+    background-color: rgba($white, 0.3) !important;
   }
 
   .navbar-brand {
