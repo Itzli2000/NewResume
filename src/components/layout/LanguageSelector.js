@@ -25,31 +25,24 @@ const LanguageSelector = () => {
     let imageLang = i18n.language === 'es' ? MX : US;
 
     return (
-        <div className="selector-container row">
+        <div className="selector-container">
             <div className="selected-languague" onClick={showOptions}>
-                <ReactSVG className="svgIcon" src={imageLang}  />
+                <ReactSVG className="svgIcon" src={imageLang} />
             </div>
-            <TransitionGroup>
-                <CSSTransition
-                    timeout={500}
-                    classNames="show"
+            <div className={"options-language" + (showoptions ? ' show ' : '')}>
+                <div
+                    className={"option" + (i18n.language === 'es' ? ' active' : '')}
+                    onClick={() => setLanguage('es')}
                 >
-                    <div className={"options-language" + (showoptions ? ' show ' : '')}>
-                        <div
-                            className={"option" + (i18n.language === 'es' ? ' active' : '')}
-                            onClick={() => setLanguage('es')}
-                        >
-                            <ReactSVG className="svgIcon" src={MX} /> &nbsp; {t('STR_1')}
-                        </div>
-                        <div
-                            className={"option" + (i18n.language === 'en' ? ' active' : '')}
-                            onClick={() => setLanguage('en')}
-                        >
-                            <ReactSVG className="svgIcon" src={US} /> &nbsp; {t('STR_2')}
-                        </div>
-                    </div>
-                </CSSTransition>
-            </TransitionGroup>
+                    <ReactSVG className="svgIcon" src={MX} /> &nbsp; {t('STR_1')}
+                </div>
+                <div
+                    className={"option" + (i18n.language === 'en' ? ' active' : '')}
+                    onClick={() => setLanguage('en')}
+                >
+                    <ReactSVG className="svgIcon" src={US} /> &nbsp; {t('STR_2')}
+                </div>
+            </div>
         </div>
     );
 };

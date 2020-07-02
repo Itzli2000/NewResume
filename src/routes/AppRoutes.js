@@ -8,17 +8,19 @@ import Work from '../components/work/Work';
 
 const AppRoutes = (props) => {
     return (
-        <Router>
-            {/* <NavBar {...props} /> */}
-            <Switch>
-                <Route exact path="/" >
-                    <Redirect to="/home" />
-                </Route>
-                <Route exact path="/home" render={(props) => <Home {...props} />} />
-                <Route exact path="/about" render={(props) => <About {...props} />} />
-                <Route exact path="/work" render={(props) => <Work {...props} />} />
-            </Switch>
-        </Router>
+        <div className="col">
+            <Router>
+                {/* <NavBar {...props} /> */}
+                <Switch>
+                    <Route exact path="/" >
+                        <Redirect to="/home" />
+                    </Route>
+                    <Route exact path="/home" render={(props) => <Home {...props} />} />
+                    <Route exact path="/about" render={(props) => <About {...props} />} />
+                    <Route exact path="/work" render={(props) => <Work {...props} />} />
+                </Switch>
+            </Router>
+        </div>
     );
 };
 

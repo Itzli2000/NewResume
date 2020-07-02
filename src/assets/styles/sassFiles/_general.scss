@@ -1,5 +1,9 @@
 :root {
   font-size: $root_size;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+  }
 }
 
 html {
@@ -174,12 +178,18 @@ button {
   -webkit-transition: background-color 0.25s ease-in-out;
   -moz-transition: background-color 0.25s ease-in-out;
   -ms-transitionbackground-color: 0.25s ease-in-out;
-  -o-transitiobackground-colorn: 0.25s ease-in-out;
+  -o-transitiobackground-color: 0.25s ease-in-out;
   -ms-transition: background-color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out;
 
   &.bg-light {
     background-color: rgba($white, 0.3) !important;
+  }
+
+  button {
+    &:hover {
+      background-color: transparent;
+    }
   }
 
   .navbar-brand {
@@ -193,6 +203,12 @@ button {
       bottom: -0.5rem;
       color: $accent;
       font-size: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 997px) {
+    .language-item {
+      margin-left: auto;
     }
   }
 }

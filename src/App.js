@@ -56,9 +56,11 @@ const App = () => {
 
   return (
     <div className="container-fluid">
-      <AppRoutes />
-      <div onClick={() => window.scrollTo(0, 0)} className={"scroll-top" + (!visible ? ' show ' : '')}>
-        <i className="fa fa-chevron-up" aria-hidden="true"></i>
+      <div className="row">
+        <AppRoutes />
+        <div onClick={() => window.scrollTo(0, 0)} className={"scroll-top" + (!visible ? ' show ' : '')}>
+          <i className="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
   );
