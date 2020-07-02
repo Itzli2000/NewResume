@@ -97,7 +97,7 @@
             height: auto;
             animation: cloud1 25s;
             -moz-animation: cloud1 25s;
-            -webkit-animation: cloud1 25s; 
+            -webkit-animation: cloud1 25s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
 
@@ -109,22 +109,7 @@
 
 
     .main-section {
-        position: relative;
         z-index: 100;
-        // color: $black;
-
-        .avatar {
-            position: relative;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            width: 150px;
-            
-            svg {
-                max-width: 150px;
-                height: auto;
-            }
-        }
 
         .badge {
             font-weight: 600;
@@ -144,6 +129,33 @@
 
         p.description {
             max-width: 650px;
+        }
+    }
+}
+
+.second {
+    .avatar {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+        background-color: rgba($white, 0.5);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+
+        svg {
+            width: 100%;
+            max-width: 95px;
+            height: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }
