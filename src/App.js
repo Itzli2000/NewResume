@@ -10,7 +10,7 @@ const App = () => {
   const [canupdatenav, setCanUpdateNav] = useState(false);
     
   const validateScroll = () => {
-      const isTop = window.scrollY < (window.screen.availHeight - 300);
+      const isTop = window.scrollY < (window.screen.availHeight - (window.screen.availHeight * 0.3));
       if (!canupdatenav)
           setCanUpdateNav(true);
       if (!isTop) {

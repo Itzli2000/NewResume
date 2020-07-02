@@ -6,16 +6,16 @@ import NavBar from '../layout/NavBar';
 const Home = (props) => {
     // console.log(props)
 
-    const [section, setSection] = useState('first');
+    const [section, setSection] = useState('');
 
     const scrollTo = (element) => {
         setSection(element);
-        let el = document.getElementById(section);
+        let el = document.getElementById(element);
         el.scrollIntoView({ behavior: "smooth" });
     }
 
     return (
-        <div className="animate__animated animate__fadeIn" >
+        <div className="animate__animated animate__fadeIn" scrolledto={section}>
             <NavBar {...props} />
             <MainSection scrollTo={scrollTo} />
             <SecondSection />

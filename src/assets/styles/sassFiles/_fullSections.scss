@@ -34,11 +34,11 @@
             position: absolute;
             left: 50%;
             bottom: 0;
-            transform: translate(-50%, -50%);
             z-index: 1;
             width: 100%;
             max-width: 800px;
             height: auto;
+            transform: translate(-50%, -50%);
             -webkit-transform: translate(-50%, -50%);
             -moz-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
@@ -130,6 +130,38 @@
         p.description {
             max-width: 650px;
         }
+
+        .scroll-down {
+            margin: 0 auto;
+            position: relative;
+            width: 25px;
+            height: 40px;
+            border: 2px solid $white;
+            border-radius: 15px;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            -ms-border-radius: 15px;
+            -o-border-radius: 15px;
+            cursor: pointer;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                height: 8px;
+                border-left: 2.5px solid $white;
+                animation: mouseAnimate 1s;
+                -webkit-animation: mouseAnimate 1s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
     }
 }
 
@@ -197,5 +229,45 @@
 
     to {
         right: 100%;
+    }
+}
+
+@keyframes mouseAnimate {
+    0% {
+        top: 10px
+    }
+
+    100% {
+        top: 25px;
+    }
+}
+
+@keyframes mouseAnimate {
+    from {
+        top: 10px;
+    }
+
+    to {
+        top: 25px;
+    }
+}
+
+@-moz-keyframes mouseAnimate {
+    from {
+        top: 10px;
+    }
+
+    to {
+        top: 25px;
+    }
+}
+
+@-webkit-keyframes mouseAnimate {
+    from {
+        top: 10px;
+    }
+
+    to {
+        top: 25px;
     }
 }
