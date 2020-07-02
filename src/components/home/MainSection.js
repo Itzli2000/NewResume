@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Typed from 'react-typed';
 import { useTranslation } from 'react-i18next';
 // Images
@@ -10,45 +10,12 @@ import { useTranslation } from 'react-i18next';
 const MainSection = ({scrollTo}) => {
 
     const { t } = useTranslation();
-    const [visible, setVisible] = useState(true);
-    const [canupdatenav, setCanUpdateNav] = useState(false);
 
     let strings = [
         t('STR_6'),
         t('STR_7'),
         t('STR_0')
     ];
-    
-    const validateScroll = () => {
-        const isTop = window.scrollY < (window.screen.availHeight - 300);
-        if (!canupdatenav)
-            setCanUpdateNav(true);
-        if (!isTop) {
-            setVisible(false);
-        }
-        else {
-            setVisible(true);
-        }
-    }
-    window.addEventListener("scroll", validateScroll);
-
-    useEffect(() => {
-        let navBar = document.getElementById('main-nav');
-        if (canupdatenav && navBar) {
-            if (visible) {
-                navBar.classList.remove('navbar-light');
-                navBar.classList.remove('bg-light');
-                navBar.classList.add('navbar-dark');
-                navBar.classList.add('bg-dark');
-            } else {
-                navBar.classList.remove('navbar-dark');
-                navBar.classList.remove('bg-dark');
-                navBar.classList.add('navbar-light');
-                navBar.classList.add('bg-light');
-            }
-        }
-        // eslint-disable-next-line
-    }, [visible]);
 
     return (
         <div
