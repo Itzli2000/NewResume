@@ -45,11 +45,11 @@
             transition: all 0.25s ease-in-out;
 
             &.active {
-                background-color: rgba($accent, 0.6);
+                background-color: rgba($primary, 0.6);
             }
 
             &:hover {
-                background-color: rgba($accent, 0.5);
+                background-color: rgba($primary, 0.45);
             }
 
             .svgIcon {

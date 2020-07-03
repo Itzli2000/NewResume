@@ -1,3 +1,13 @@
+// @include customButton(
+//   $border: 1px solid $accent,
+//   $borderRadius: 10px,
+//   $textColor: $white,
+//   $padding: 5px 10px,
+//   $backColor: transparent,
+//   $hoverBackColor: $white,
+//   $hoverTextColor: $primary,
+//   $hoverBorder: 1px solid transparent
+//   );
 @mixin customButton(
   $border: 1px solid $white,
   $borderRadius: 10px,
@@ -7,13 +17,17 @@
   $hoverBackColor: $white,
   $hoverTextColor: $primary,
   $hoverBorder: 1px solid transparent
-) {
+  ) {
   border: $border;
   color: $textColor;
   border-radius: $borderRadius;
   background-color: $backColor;
   padding: $padding;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
   &:hover {
     background-color: $hoverBackColor;
     color: $hoverTextColor;
@@ -28,24 +42,18 @@
   $endOpacity: 1,
   $startAt: 0%,
   $endAt: 100%
-) {
+  ) {
   background: rgba($startColor, $startOpacity);
-  background: -moz-linear-gradient(
-    left,
-    rgba($startColor, $startOpacity) $startAt,
-    rgba($endColor, $endOpacity) $endAt
-  );
-  background: -webkit-gradient(
-    left top,
-    right top,
-    color-stop($startAt, rgba($startColor, $startOpacity)),
-    color-stop($endAt, rgba($endColor, $endOpacity))
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba($startColor, $startOpacity) $startAt,
-    rgba($endColor, $endOpacity) $endAt
-  );
+  background: -moz-linear-gradient(left,
+      rgba($startColor, $startOpacity) $startAt,
+      rgba($endColor, $endOpacity) $endAt);
+  background: -webkit-gradient(left top,
+      right top,
+      color-stop($startAt, rgba($startColor, $startOpacity)),
+      color-stop($endAt, rgba($endColor, $endOpacity)));
+  background: -webkit-linear-gradient(left,
+      rgba($startColor, $startOpacity) $startAt,
+      rgba($endColor, $endOpacity) $endAt);
   background: -o-linear-gradient(left, rgba($startColor, $startOpacity) $startAt, rgba($endColor, $endOpacity) $endAt);
   background: -ms-linear-gradient(left, rgba($startColor, $startOpacity) $startAt, rgba($endColor, $endOpacity) $endAt);
   background: linear-gradient(to right, rgba($startColor, $startOpacity) $startAt, rgba($endColor, $endOpacity) $endAt);
@@ -60,15 +68,15 @@
 // 	$alpha: map-get($pop_shadow, 'alpha')
 // );
 @mixin boxShadowMixin(
-	$offX: 0rem, 
-	$offY: 0.625rem, 
-	$blur: 1.25rem, 
-	$spread: -1rem, 
-	$color: $terciary, 
-	$alpha: 0.35
-	) {
-	-webkit-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
-	-moz-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
+  $offX: 0rem,
+  $offY: 0.625rem,
+  $blur: 1.25rem,
+  $spread: -1rem,
+  $color: $terciary,
+  $alpha: 0.35
+  ) {
+  -webkit-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
+  -moz-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
   box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
   transition: all 0.25s ease-in-out;
 }

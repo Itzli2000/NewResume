@@ -6,10 +6,6 @@
   }
 }
 
-// html {
-//   scroll-behavior: smooth;
-// }
-
 // Font family weights 300, 400, 600
 body {
   font-family: 'Montserrat', sans-serif;
@@ -94,7 +90,8 @@ a {
 input,
 select,
 textarea,
-button {
+button,
+.btn {
   outline: none !important;
   box-shadow: none !important;
   caret-color: $secondary;
@@ -183,7 +180,7 @@ button {
   -o-transition: background-color 0.25s ease-in-out;
 
   &.bg-light {
-    background-color: rgba($white, 0.3) !important;
+    background-color: rgba($primary, 0.2) !important;
   }
 
   button {
