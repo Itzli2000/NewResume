@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MainSection from './MainSection';
 import SecondSection from './SecondSection';
+import ThirdSection from './ThirdSection';
 import NavBar from '../layout/NavBar';
 // Helper
 import { scrollPageTo } from './../../helpers';
@@ -20,6 +21,7 @@ const Home = (props) => {
             <NavBar {...props} />
             <MainSection scrollTo={scrollTo} />
             <SecondSection />
+            <ThirdSection />
         </div>
     );
 };

@@ -4,8 +4,53 @@
         "icon": "JS",
         "title": "JavaScript",
         "description": [
-            "lorem lorem lorem lorem lorem",
-            "lorem lorem lorem lorem lorem"
+            "SERVICE_1",
+            "SERVICE_2"
+        ]
+    },
+    {
+        "id": 1,
+        "icon": "BS",
+        "title": "Bootstrap",
+        "description": [
+            "SERVICE_3",
+            "SERVICE_4"
+        ]
+    },
+    {
+        "id": 2,
+        "icon": "CSS",
+        "title": "CSS 3",
+        "description": [
+            "SERVICE_5",
+            "SERVICE_6"
+        ]
+    },
+    {
+        "id": 3,
+        "icon": "SASS",
+        "title": "SASS",
+        "description": [
+            "SERVICE_7",
+            "SERVICE_8"
+        ]
+    },
+    {
+        "id": 4,
+        "icon": "GT",
+        "title": "Git",
+        "description": [
+            "SERVICE_9",
+            "SERVICE_1"
+        ]
+    },
+    {
+        "id": 5,
+        "icon": "GH",
+        "title": "GitHub",
+        "description": [
+            "SERVICE_2",
+            "SERVICE_3"
         ]
     }
 ]

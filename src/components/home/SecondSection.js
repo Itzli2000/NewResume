@@ -1,8 +1,5 @@
 import React from 'react';
-// import { ReactSVG } from 'react-svg';
 import { useTranslation } from 'react-i18next';
-// Images
-// import AVATAR from './../../assets/images/avatar.svg';
 // Helpers
 import { calculate_age } from './../../helpers';
 // Documents
@@ -18,7 +15,6 @@ const SecondSection = () => {
     const birth = new Date(1988, 5, 28);
 
     return (
-        // <ReactSVG className="avatar" src={AVATAR} />
         <div id="second" className="row full-section second">
             <div className="container row">
                 <div className="col-12 col-lg-6 text-center">

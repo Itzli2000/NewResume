@@ -305,3 +305,28 @@
         }
     }
 }
+
+.third {
+    background-color: rgba($secondary, 0.15);
+    .info-container {
+        h2 {
+            margin-top: 3rem;
+            margin-bottom: 0;
+            z-index: 1;
+            text-transform: uppercase;
+            font-size: $h6_font-size;
+            color: $accent;
+        }
+
+        h3 {
+            margin-bottom: 2rem;
+            font-size: $h1_font-size;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    }
+}

@@ -75,7 +75,7 @@
   $offY: 0.625rem,
   $blur: 1.25rem,
   $spread: -1rem,
-  $color: $terciary,
+  $color: $shadow,
   $alpha: 0.35) {
   -webkit-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
   -moz-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
