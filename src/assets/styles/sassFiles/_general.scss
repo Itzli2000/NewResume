@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: $body_fz;
-  color: $white;
+  color: $secondary;
   overflow-x: hidden;
 
   &.overflow-hidden {
@@ -180,7 +180,7 @@ button {
   -o-transition: background-color 0.25s ease-in-out;
 
   &.bg-light {
-    background-color: rgba($primary, 0.2) !important;
+    background-color: rgba($primary, 0.1) !important;
   }
 
   button {

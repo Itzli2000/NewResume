@@ -43,6 +43,7 @@
             padding: 10px;
             cursor: pointer;
             transition: all 0.25s ease-in-out;
+            color: $white;
 
             &.active {
                 background-color: rgba($primary, 0.6);
