@@ -8,16 +8,14 @@
 //   $hoverTextColor: $primary,
 //   $hoverBorder: 1px solid transparent
 //   );
-@mixin customButton(
-  $border: 1px solid $white,
+@mixin customButton($border: 1px solid $white,
   $borderRadius: 10px,
   $textColor: $white,
   $padding: 5px 10px,
   $backColor: transparent,
   $hoverBackColor: $white,
   $hoverTextColor: $primary,
-  $hoverBorder: 1px solid transparent
-  ) {
+  $hoverBorder: 1px solid transparent) {
   border: $border;
   color: $textColor;
   border-radius: $borderRadius;
@@ -28,6 +26,7 @@
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+
   &:hover {
     background-color: $hoverBackColor;
     color: $hoverTextColor;
@@ -35,14 +34,19 @@
   }
 }
 
-@mixin linearGradientBackground(
-  $startColor: $secondary,
+// @include linearGradientBackground($startColor: $secondary,
+//   $endColor: $primary,
+//   $startOpacity: 1,
+//   $endOpacity: 1,
+//   $startAt: 0%,
+//   $endAt: 100%);
+
+@mixin linearGradientBackground($startColor: $secondary,
   $endColor: $primary,
   $startOpacity: 1,
   $endOpacity: 1,
   $startAt: 0%,
-  $endAt: 100%
-  ) {
+  $endAt: 100%) {
   background: rgba($startColor, $startOpacity);
   background: -moz-linear-gradient(left,
       rgba($startColor, $startOpacity) $startAt,
@@ -67,14 +71,12 @@
 // 	$color: map-get($pop_shadow, 'color'),
 // 	$alpha: map-get($pop_shadow, 'alpha')
 // );
-@mixin boxShadowMixin(
-  $offX: 0rem,
+@mixin boxShadowMixin($offX: 0rem,
   $offY: 0.625rem,
   $blur: 1.25rem,
   $spread: -1rem,
   $color: $terciary,
-  $alpha: 0.35
-  ) {
+  $alpha: 0.35) {
   -webkit-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
   -moz-box-shadow: $offX $offY $blur $spread rgba($color, $alpha);
   box-shadow: $offX $offY $blur $spread rgba($color, $alpha);

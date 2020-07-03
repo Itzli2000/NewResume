@@ -16,12 +16,14 @@ const SecondSection = () => {
 
     return (
         // <ReactSVG className="avatar" src={AVATAR} />
-        <div id="second" className="row full-section second container mx-auto">
-            <div className="col-12 col-md-6 text-center">
-                <img src="https://dummyimage.com/400x600/000/fff" alt="Ariel about" />
-            </div>
-            <div className="col-12 col-md-6 info-container">
-                <a className="btn" href={resumeUrl} rel="noopener noreferrer" target="_blank">Download</a>
+        <div id="second" className="row full-section second">
+            <div className="container row">
+                <div className="col-12 col-lg-6 text-center">
+                    <img src="https://dummyimage.com/400x600/000/fff" alt="Ariel about" />
+                </div>
+                <div className="col-12 col-lg-6 info-container">
+                    <a className="btn" href={resumeUrl} rel="noopener noreferrer" target="_blank">{t('STR_11')}</a>
+                </div>
             </div>
         </div>
     );
