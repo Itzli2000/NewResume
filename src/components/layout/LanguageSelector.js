@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ReactSVG } from 'react-svg';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 // Images
 import MX from './../../assets/images/mx.svg';
 import US from './../../assets/images/us.svg';
