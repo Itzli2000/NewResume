@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import AppRoutes from './routes/AppRoutes';
 // Components
+// Helper
+import { scrollPageTo } from './helpers';
 
 const App = () => {
 
@@ -58,7 +60,7 @@ const App = () => {
     <div className="container-fluid">
       <div className="row">
         <AppRoutes />
-        <div onClick={() => window.scrollTo(0, 0)} className={"scroll-top" + (!visible ? ' show ' : '')}>
+        <div onClick={() => scrollPageTo(0, 1000)} className={"scroll-top" + (!visible ? ' show ' : '')}>
           <i className="fa fa-chevron-up" aria-hidden="true"></i>
         </div>
       </div>

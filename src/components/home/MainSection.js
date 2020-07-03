@@ -40,7 +40,7 @@ const MainSection = ({scrollTo}) => {
                     />
                 </p>
                 <p className="description animate__animated animate__fadeInUp">{t('STR_10')}</p>
-                <div className="scroll-down" onClick={()=>scrollTo('second')}></div>
+                <div className="scroll-down" onClick={()=>scrollTo('.second', 1000)}></div>
             </div>
         </div>
     );

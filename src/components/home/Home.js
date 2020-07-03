@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import MainSection from './MainSection';
 import SecondSection from './SecondSection';
 import NavBar from '../layout/NavBar';
+// Helper
+import { scrollPageTo } from './../../helpers';
 
 const Home = (props) => {
     // console.log(props)
 
     const [section, setSection] = useState('');
 
-    const scrollTo = (element) => {
+    const scrollTo = (element, duration) => {
         setSection(element);
-        let el = document.getElementById(element);
-        el.scrollIntoView();
+        scrollPageTo(element, duration);
     }
 
     return (
