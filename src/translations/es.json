@@ -45,10 +45,15 @@
     "FORM_3": "Título",
     "FORM_4": "Tu mensaje",
     "FORM_5": "Escribe un mensaje",
+    "FORM_6": "Enviar",
+    "FORM_7": "Enviando...",
     "FORM_ERROR_1": "Por favor ingresa tu nombre",
+    "FORM_ERROR_1_1": "Al menos 5 caracteres",
     "FORM_ERROR_2": "Ingresa un correo válido",
     "FORM_ERROR_3": "Por favor ingresa un título",
+    "FORM_ERROR_3_1": "Al menos 3 caracteres",
     "FORM_ERROR_4": "Debes escribir un mensaje",
+    "FORM_ERROR_4_1": "Tu mensaje es muy corto",
     "FORM_SENT": "Mensaje enviado, me pondre en contacto",
     "FORM_NOT_SENT": "Ocurrio un error, intenta mas tarde"
 }

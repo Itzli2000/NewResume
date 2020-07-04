@@ -9,13 +9,15 @@ import { EmailTemplate } from './EmailTemplate';
 const ContactForm = () => {
 
     const [emailsent, setEmailSent] = useState(undefined);
+    const [submiting, setSubmiting] = useState(false);
     const { register, handleSubmit, errors } = useForm();
     const { t } = useTranslation();
+    console.log(errors);
 
     const onSubmit = (data, e) => {
         const { email, firstname, message, title } = data;
         const body = EmailTemplate(email, firstname, title, message);
-        console.log(body);
+        setSubmiting(true);
         // https://smtpjs.com/
         window.Email.send({
             Host: "smtp.gmail.com",
@@ -30,6 +32,7 @@ const ContactForm = () => {
                 console.log(message)
                 if (message === 'OK') setEmailSent(true);
                 if (message !== 'OK') setEmailSent(false);
+                setSubmiting(false);
                 e.target.reset();
                 setTimeout(() => {
                     setEmailSent(undefined);
@@ -44,9 +47,9 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
             {
                 emailsent !== undefined &&
-                <Message 
-                message={emailsent ? t('FORM_SENT') : t('FORM_NOT_SENT')} 
-                type={emailsent ? 'alert-success' : 'alert:danger'} 
+                <Message
+                    message={emailsent ? t('FORM_SENT') : t('FORM_NOT_SENT')}
+                    type={emailsent ? 'alert-success' : 'alert:danger'}
                 />
             }
             <div className="form-row mb-3">
@@ -56,9 +59,16 @@ const ContactForm = () => {
                         className="form-control"
                         id="firstname"
                         name="firstname"
-                        ref={register({ required: true })}
+                        ref={register({ required: true, minLength: 5 })}
                     />
-                    {errors.firstname && <small className="text-danger">{t('FORM_ERROR_1')}</small>}
+                    {
+                        (errors.firstname && errors.firstname.type === "required") &&
+                        <small className="text-danger">{t('FORM_ERROR_1')}</small>
+                    }
+                    {
+                        (errors.firstname && errors.firstname.type === "minLength") &&
+                        <small className="text-danger">{t('FORM_ERROR_1_1')}</small>
+                    }
                 </div>
                 <div className="col-12 col-md-6">
                     <label htmlFor="email">{t('FORM_2')}</label>
@@ -77,9 +87,16 @@ const ContactForm = () => {
                     className="form-control"
                     id="title"
                     name="title"
-                    ref={register({ required: true })}
+                    ref={register({ required: true, minLength: 3 })}
                 />
-                {errors.title && <small className="text-danger">{t('FORM_ERROR_3')}</small>}
+                {
+                    (errors.title && errors.title.type === "required") &&
+                    <small className="text-danger">{t('FORM_ERROR_3')}</small>
+                }
+                {
+                    (errors.title && errors.title.type === "minLength") &&
+                    <small className="text-danger">{t('FORM_ERROR_3_1')}</small>
+                }
             </div>
             <div className="form-group">
                 <label htmlFor="message">{t('FORM_4')}</label>
@@ -89,12 +106,23 @@ const ContactForm = () => {
                     name="message"
                     placeholder={t('FORM_5')}
                     rows="5"
-                    ref={register({ required: true })}
+                    ref={register({ required: true, minLength: 15 })}
                 ></textarea>
-                {errors.message && <small className="text-danger">{t('FORM_ERROR_4')}</small>}
+                {
+                    (errors.message && errors.message.type === "required") &&
+                    <small className="text-danger">{t('FORM_ERROR_4')}</small>
+                }
+                {
+                    (errors.message && errors.message.type === "minLength") &&
+                    <small className="text-danger">{t('FORM_ERROR_4_1')}</small>
+                }
             </div>
-
-            <input className="btn form-btn btn-block" type="submit" />
+            {
+                !submiting ?
+                    <input className="btn form-btn btn-block" type="submit" value={t('FORM_6')} />
+                    :
+                    <button className="btn form-btn btn-block" disabled><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>&nbsp;{t('FORM_7')}</button>
+            }
         </form>
     );
 };
