@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: $body_fz;
-  color: $secondary;
+  color: $black;
   overflow-x: hidden;
 
   &.overflow-hidden {
@@ -37,6 +37,7 @@ h1,
   font-size: $h1_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 h2,
@@ -44,6 +45,7 @@ h2,
   font-size: $h2_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 h3,
@@ -51,6 +53,7 @@ h3,
   font-size: $h3_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 h4,
@@ -58,6 +61,7 @@ h4,
   font-size: $h4_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 h5,
@@ -65,6 +69,7 @@ h5,
   font-size: $h5_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 h6,
@@ -72,6 +77,7 @@ h6,
   font-size: $h6_font-size;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  color: $blackTitle;
 }
 
 input[type=number] {

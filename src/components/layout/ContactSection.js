@@ -1,5 +1,7 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import ContactInformation from './ContactInformation';
+// Hooks
 import { useTranslation } from 'react-i18next';
 
 const ContactSection = () => {
@@ -18,6 +20,7 @@ const ContactSection = () => {
                     <ContactForm />
                 </div>
                 <div className="col-12 col-lg-6">
+                    <ContactInformation />
                 </div>
             </div>
         </div>

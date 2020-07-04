@@ -12,7 +12,6 @@ const ContactForm = () => {
     const [submiting, setSubmiting] = useState(false);
     const { register, handleSubmit, errors } = useForm();
     const { t } = useTranslation();
-    console.log(errors);
 
     const onSubmit = (data, e) => {
         const { email, firstname, message, title } = data;
