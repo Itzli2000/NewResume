@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+// Components
+import NavBar from '../layout/NavBar';
 import MainSection from './MainSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
-import NavBar from '../layout/NavBar';
+import ContactSection from './../layout/ContactSection';
 // Helper
 import { scrollPageTo } from './../../helpers';
 
@@ -22,6 +24,7 @@ const Home = (props) => {
             <MainSection scrollTo={scrollTo} />
             <SecondSection />
             <ThirdSection />
+            <ContactSection />
         </div>
     );
 };

@@ -179,9 +179,9 @@ button {
   -ms-transition: background-color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out;
 
-  &.bg-light {
-    background-color: rgba($primary, 0.1) !important;
-  }
+  // &.bg-light {
+  //   background-color: rgba($primary, 0.1) !important;
+  // }
 
   button {
     &:hover {

@@ -186,6 +186,7 @@
 }
 
 .second {
+    padding: 3rem 0;
     // @include linearGradientBackground($startColor: $secondary,
     //     $endColor: $secondary,
     //     $startOpacity: 0.1,
@@ -307,6 +308,7 @@
 }
 
 .third {
+    padding: 3rem 0;
     background-color: rgba($secondary, 0.15);
     .info-container {
         h2 {

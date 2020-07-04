@@ -38,5 +38,15 @@
     "SERVICE_6": "Lorem ipsum dolor sit amet",
     "SERVICE_7": "Lorem ipsum dolor sit amet",
     "SERVICE_8": "Lorem ipsum dolor sit amet",
-    "SERVICE_9": "Lorem ipsum dolor sit amet"
+    "SERVICE_9": "Lorem ipsum dolor sit amet",
+    "": "",
+    "FORM_1": "Nombre",
+    "FORM_2": "Correo",
+    "FORM_3": "Título",
+    "FORM_4": "Tu mensaje",
+    "FORM_5": "Escribe un mensaje",
+    "FORM_ERROR_1": "Por favor ingresa tu nombre",
+    "FORM_ERROR_2": "Ingresa un correo válido",
+    "FORM_ERROR_3": "Por favor ingresa un título",
+    "FORM_ERROR_": "Debes escribir un mensaje"
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
 // Images
 import JS from './../../assets/images/js.svg';
 import BS from './../../assets/images/bootstrap.svg';
@@ -45,6 +46,9 @@ const ServiceCard = ({ service }) => {
             </div>
         </div>
     );
+};
+ServiceCard.propTypes = {
+    service: PropTypes.object.isRequired,
 };
 
 export default ServiceCard;

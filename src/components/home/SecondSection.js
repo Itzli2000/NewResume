@@ -18,7 +18,7 @@ const SecondSection = () => {
         <div id="second" className="row full-section second">
             <div className="container row">
                 <div className="col-12 col-lg-6 text-center">
-                    <img src="https://dummyimage.com/400x600/000/fff" alt="Ariel about" />
+                    <img src="https://dummyimage.com/400x600/000/fff" alt="Ariel about" className="img-fluid"/>
                 </div>
                 <div className="col-12 col-lg-6 info-container">
                     <h2>{t('STR_12')}</h2>

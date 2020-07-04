@@ -40,5 +40,18 @@
     "SERVICE_7": "Lorem ipsum dolor sit amet",
     "SERVICE_8": "Lorem ipsum dolor sit amet",
     "SERVICE_9": "Lorem ipsum dolor sit amet",
+    "": "",
+    "": "",
+    "": "",
+    "FORM_1": "Name",
+    "FORM_2": "Email",
+    "FORM_3": "Subject",
+    "FORM_4": "Your message",
+    "FORM_5": "Write a message...",
+    "FORM_ERROR_1": "Please enter your name",
+    "FORM_ERROR_2": "Provide a valid email",
+    "FORM_ERROR_3": "Please enter a title",
+    "FORM_ERROR_": "You must provide a message",
+    "": "",
     "": ""
 }
