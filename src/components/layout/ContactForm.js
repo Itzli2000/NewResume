@@ -8,6 +8,23 @@ const ContactForm = () => {
     const { t } = useTranslation();
     const onSubmit = (data) => {
         console.log(data);
+        console.log(window.Email);
+        const { email, firstname, message, title } = data;
+        // const tok = "395caf3e-4588-4519-bfcd-2063bd66fcbe";
+        const body = `${firstname} dice: \n ${message}`;
+        // https://smtpjs.com/
+        window.Email.send({
+            // SecureToken: tok,
+            Host: "smtp.gmail.com",
+            Username: "itzli2000@gmail.com",
+            Password: "molinona&9",
+            To: 'itzli2000@msn.com',
+            From: email,
+            Subject: title,
+            Body: body
+        }).then(
+            message => console.log(message)
+        );
     };
     const mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
