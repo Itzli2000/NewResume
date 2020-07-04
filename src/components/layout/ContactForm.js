@@ -120,7 +120,7 @@ const ContactForm = () => {
                 !submiting ?
                     <input className="btn form-btn btn-block" type="submit" value={t('FORM_6')} />
                     :
-                    <button className="btn form-btn btn-block" disabled><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>&nbsp;{t('FORM_7')}</button>
+                    <button className="btn form-btn btn-block" disabled><i className="fa fa-spinner fa-pulse" aria-hidden="true"></i>&nbsp;{t('FORM_7')}</button>
             }
         </form>
     );
