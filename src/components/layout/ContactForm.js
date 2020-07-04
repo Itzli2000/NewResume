@@ -29,7 +29,6 @@ const ContactForm = () => {
             Body: body
         }).then(
             message => {
-                console.log(message)
                 if (message === 'OK') setEmailSent(true);
                 if (message !== 'OK') setEmailSent(false);
                 setSubmiting(false);

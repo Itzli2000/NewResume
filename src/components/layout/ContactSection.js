@@ -9,9 +9,9 @@ const ContactSection = () => {
     return (
         <div id="contatc" className="row full-section contatc">
             <div className="text-center info-container">
-                <h2>{t('STR_19')}</h2>
-                <h3>{t('STR_20')}</h3>
-                <p>{t('STR_21')}</p>
+                <h2>{t('FORM_SECTION_1')}</h2>
+                <h3>{t('FORM_SECTION_2')}</h3>
+                <p>{t('FORM_SECTION_3')}</p>
             </div>
             <div className="container row">
                 <div className="col-12 col-lg-6 form-container">
