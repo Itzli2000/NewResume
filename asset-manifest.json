@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NewResume/static/css/main.8b480d87.chunk.css",
-    "main.js": "/NewResume/static/js/main.2f25622b.chunk.js",
-    "main.js.map": "/NewResume/static/js/main.2f25622b.chunk.js.map",
+    "main.js": "/NewResume/static/js/main.0667f072.chunk.js",
+    "main.js.map": "/NewResume/static/js/main.0667f072.chunk.js.map",
     "runtime-main.js": "/NewResume/static/js/runtime-main.2aaaf4e4.js",
     "runtime-main.js.map": "/NewResume/static/js/runtime-main.2aaaf4e4.js.map",
     "static/css/2.e2dd9b0a.chunk.css": "/NewResume/static/css/2.e2dd9b0a.chunk.css",
     "static/js/2.5a00eccd.chunk.js": "/NewResume/static/js/2.5a00eccd.chunk.js",
     "static/js/2.5a00eccd.chunk.js.map": "/NewResume/static/js/2.5a00eccd.chunk.js.map",
     "index.html": "/NewResume/index.html",
-    "precache-manifest.94ee8b33b3d063ef41b5f456c7dee8d1.js": "/NewResume/precache-manifest.94ee8b33b3d063ef41b5f456c7dee8d1.js",
+    "precache-manifest.663b1ca03f7cb028c0be9226f63374e0.js": "/NewResume/precache-manifest.663b1ca03f7cb028c0be9226f63374e0.js",
     "service-worker.js": "/NewResume/service-worker.js",
     "static/css/2.e2dd9b0a.chunk.css.map": "/NewResume/static/css/2.e2dd9b0a.chunk.css.map",
     "static/css/main.8b480d87.chunk.css.map": "/NewResume/static/css/main.8b480d87.chunk.css.map",
@@ -31,6 +31,6 @@
     "static/css/2.e2dd9b0a.chunk.css",
     "static/js/2.5a00eccd.chunk.js",
     "static/css/main.8b480d87.chunk.css",
-    "static/js/main.2f25622b.chunk.js"
+    "static/js/main.0667f072.chunk.js"
   ]
 }
