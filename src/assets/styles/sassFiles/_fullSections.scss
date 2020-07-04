@@ -14,104 +14,10 @@
 
 .first {
     position: relative;
-    // background-image: url('../../images/lanscape.svg');
     background-image: url('../../images/back.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-    .back-container {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-
-        &:after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: rgba($primary, 0.15);
-        }
-
-        .hills {
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            z-index: 1;
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-
-            .hill-1 {
-                fill: #9ee493;
-            }
-
-            .hill-2 {
-                fill: #daf7dc;
-            }
-        }
-
-        .trees {
-            position: absolute;
-            right: 20%;
-            bottom: 5%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            width: 100%;
-            max-width: 150px;
-            height: auto;
-            -webkit-transform: translate(-50%, -50%);
-            -moz-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            -o-transform: translate(-50%, -50%);
-        }
-
-        .cloud1 {
-            position: absolute;
-            right: -100%;
-            top: 20%;
-            z-index: 2;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            animation: cloud1 20s;
-            -moz-animation: cloud1 20s;
-            -webkit-animation: cloud1 20s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-
-            .cls-1 {
-                fill: #87bfff;
-            }
-        }
-
-        .cloud2 {
-            position: absolute;
-            right: -100%;
-            top: 20%;
-            z-index: 2;
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            animation: cloud1 25s;
-            -moz-animation: cloud1 25s;
-            -webkit-animation: cloud1 25s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-
-            .cls-2 {
-                fill: #add7f6;
-            }
-        }
-    }
-
 
     .main-section {
         z-index: 100;
@@ -187,13 +93,6 @@
 
 .second {
     padding: 3rem 0;
-    // @include linearGradientBackground($startColor: $secondary,
-    //     $endColor: $secondary,
-    //     $startOpacity: 0.1,
-    //     $endOpacity: 0.3,
-    //     $startAt: 0%,
-    //     $endAt: 100%);
-
 
     .avatar {
         position: relative;
@@ -223,37 +122,11 @@
     .info-container {
         h2 {
             margin-top: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 400;
+            margin-bottom: 0;
             z-index: 1;
             text-transform: uppercase;
-            font-size: $h3_font-size;
-            position: relative;
-
-            &::first-letter {
-                color: $white;
-            }
-
-            &:before {
-                content: '';
-                width: $h2_font-size * 1.3;
-                height: $h2_font-size * 1.3;
-                border-radius: 100%;
-                -webkit-border-radius: 100%;
-                -moz-border-radius: 100%;
-                -ms-border-radius: 100%;
-                -o-border-radius: 100%;
-                background-color: rgba($accent, 0.9);
-                position: absolute;
-                z-index: -1;
-                left: -0.5rem;
-                top: 50%;
-                transform: translateY(-50%);
-                -webkit-transform: translateY(-50%);
-                -moz-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                -o-transform: translateY(-50%);
-            }
+            font-size: $h6_font-size;
+            color: $accent;
         }
 
         h3 {
