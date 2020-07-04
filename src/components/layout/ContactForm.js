@@ -7,11 +7,11 @@ const ContactForm = () => {
     const { register, handleSubmit, errors } = useForm();
     const { t } = useTranslation();
     const onSubmit = (data) => {
+        console.log('Cambio 2');
         console.log(data);
-        console.log(window.Email);
         const { email, firstname, message, title } = data;
-        // const tok = "395caf3e-4588-4519-bfcd-2063bd66fcbe";
-        const body = `${firstname} dice: \n ${message}`;
+        // const tok = "3e59025c-3af2-4e08-af4d-d0f8bba48489";
+        const body = `${firstname} \n email: ${email} dice: \n ${message}`;
         // https://smtpjs.com/
         window.Email.send({
             // SecureToken: tok,
@@ -19,7 +19,7 @@ const ContactForm = () => {
             Username: "itzli2000@gmail.com",
             Password: "molinona&9",
             To: 'itzli2000@msn.com',
-            From: email,
+            From: 'itzli2000@gmail.com',
             Subject: title,
             Body: body
         }).then(
