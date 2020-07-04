@@ -12,7 +12,6 @@ const LanguageSelector = () => {
     const { t, i18n } = useTranslation();
 
     const showOptions = () => {
-        console.log('aqui')
         setShowOptions(showOptions => !showOptions);
     }
 

@@ -1,36 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
+// Components
+import Message from './Message';
+// Email template
+import { EmailTemplate } from './EmailTemplate';
 
 const ContactForm = () => {
 
+    const [emailsent, setEmailSent] = useState(undefined);
     const { register, handleSubmit, errors } = useForm();
     const { t } = useTranslation();
-    const onSubmit = (data) => {
-        console.log('Cambio 2');
-        console.log(data);
+
+    const onSubmit = (data, e) => {
         const { email, firstname, message, title } = data;
-        // const tok = "3e59025c-3af2-4e08-af4d-d0f8bba48489";
-        const body = `${firstname} \n email: ${email} dice: \n ${message}`;
+        const body = EmailTemplate(email, firstname, title, message);
+        console.log(body);
         // https://smtpjs.com/
         window.Email.send({
-            // SecureToken: tok,
             Host: "smtp.gmail.com",
             Username: "itzli2000@gmail.com",
             Password: "molinona&9",
             To: 'itzli2000@msn.com',
             From: 'itzli2000@gmail.com',
-            Subject: title,
+            Subject: 'Contacto desde portafolio',
             Body: body
         }).then(
-            message => console.log(message)
+            message => {
+                console.log(message)
+                if (message === 'OK') setEmailSent(true);
+                if (message !== 'OK') setEmailSent(false);
+                e.target.reset();
+                setTimeout(() => {
+                    setEmailSent(undefined);
+                }, 3000);
+            }
         );
     };
-    const mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+    const mailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
+            {
+                emailsent !== undefined &&
+                <Message 
+                message={emailsent ? t('FORM_SENT') : t('FORM_NOT_SENT')} 
+                type={emailsent ? 'alert-success' : 'alert:danger'} 
+                />
+            }
             <div className="form-row mb-3">
                 <div className="col-12 col-md-6">
                     <label htmlFor="firstname">{t('FORM_1')}</label>

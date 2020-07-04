@@ -48,5 +48,7 @@
     "FORM_ERROR_1": "Por favor ingresa tu nombre",
     "FORM_ERROR_2": "Ingresa un correo válido",
     "FORM_ERROR_3": "Por favor ingresa un título",
-    "FORM_ERROR_": "Debes escribir un mensaje"
+    "FORM_ERROR_4": "Debes escribir un mensaje",
+    "FORM_SENT": "Mensaje enviado, me pondre en contacto",
+    "FORM_NOT_SENT": "Ocurrio un error, intenta mas tarde"
 }
