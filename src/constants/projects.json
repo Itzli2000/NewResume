@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "title": "WORK_DATA_5",
+        "image": "MWP",
+        "description": "WORK_DATA_5D",
+        "backColor": "#68bec5"
+    },
+    {
+        "id": 1,
+        "title": "WORK_DATA_4",
+        "image": "LP",
+        "description": "WORK_DATA_4D",
+        "backColor": "#a8bbf8"
+    },
+    {
+        "id": 2,
+        "title": "WORK_DATA_3",
+        "image": "JL",
+        "description": "WORK_DATA_3D",
+        "backColor": "#f0b102"
+    },
+    {
+        "id": 3,
+        "title": "WORK_DATA_1",
+        "image": "CVD",
+        "description": "WORK_DATA_1D",
+        "backColor": "#60cf77"
+    },
+    {
+        "id": 4,
+        "title": "WORK_DATA_2",
+        "image": "CVS",
+        "description": "WORK_DATA_2D",
+        "backColor": "#ab70b5"
+    },
+    {
+        "id": 5,
+        "title": "WORK_DATA_5",
+        "image": "TSK",
+        "description": "WORK_DATA_5D",
+        "backColor": "#53545a"
+    }
+]

@@ -3,11 +3,12 @@
 
     .info-container {
         margin: auto;
+
         h2 {
             margin-bottom: 2rem;
             // text-transform: uppercase;
             font-size: $h1_font-size;
-            color: $accent;   
+            color: $accent;
         }
 
         p {
@@ -66,6 +67,35 @@
                 color: #fff;
                 box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+.jobs-container {
+    .job-card {
+        padding: 100px 0;
+
+        .image-container {
+            max-width: 800px;
+            min-width: 230px;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .body {
+            h4 {
+                text-transform: uppercase;
+                margin: 4rem auto 2rem auto;
+                text-align: center;
+                color: $white;
+            }
+
+            p {
+                max-width: 400px;
+                margin: auto;
+                color: $white;
             }
         }
     }

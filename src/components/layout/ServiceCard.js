@@ -15,9 +15,9 @@ const ServiceCard = ({ service }) => {
     const { description, icon, title } = service;
     const { t } = useTranslation();
     let showIcon = icon === 'JS' ? JS :
-                    icon === 'BS' ? BS :
-                    icon === 'RTJS' ? RTJS :
-                    icon === 'SASS' ? SASS :
+        icon === 'BS' ? BS :
+            icon === 'RTJS' ? RTJS :
+                icon === 'SASS' ? SASS :
                     icon === 'GT' ? GT : GH;
 
     const renderDescription = description => {
