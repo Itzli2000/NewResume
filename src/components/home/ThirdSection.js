@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 // Components
-import ServiceCard from './../layout/ServiceCard';
+import ServiceCard from './ServiceCard';
 // Services data
 import servicedata from '../../constants/tech.json';
 

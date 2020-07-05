@@ -4,12 +4,12 @@ import NavBar from '../layout/NavBar';
 import MainSection from './MainSection';
 import SecondSection from './SecondSection';
 import ThirdSection from './ThirdSection';
+import FourthSection from './FourthSection';
 import ContactSection from './../layout/ContactSection';
 // Helper
 import { scrollPageTo } from './../../helpers';
 
 const Home = (props) => {
-    // console.log(props)
 
     const [section, setSection] = useState('');
 
@@ -24,6 +24,7 @@ const Home = (props) => {
             <MainSection scrollTo={scrollTo} />
             <SecondSection />
             <ThirdSection />
+            <FourthSection />
             <ContactSection />
         </div>
     );

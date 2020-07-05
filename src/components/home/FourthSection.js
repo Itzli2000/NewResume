@@ -1,21 +1,21 @@
 import React from 'react';
 // Components
-import WorkCard from './../layout/WorkCard';
+import WorkCard from './WorkCard';
 // Services data
-import workData from './../../constants/works.json';
+import workData from '../../constants/works.json';
 // Helper
-import { splitArray } from './../../helpers';
+import { splitArray } from '../../helpers';
 // Hooks
 import { useTranslation } from 'react-i18next';
 
-const WorkFirst = () => {
+const FourthSection = () => {
 
     let [firstHalf, secondHalf] = splitArray([...workData]);
     const { t } = useTranslation();
 
     return (
         <div className="container">
-            <div className="row workFirst">
+            <div className="row fourth">
                 <div className="text-center info-container">
                     <h2>{t('WORK_F1')}</h2>
                     <p>{t('WORK_F2')}</p>
@@ -47,4 +47,4 @@ const WorkFirst = () => {
     );
 };
 
-export default WorkFirst;
+export default FourthSection;

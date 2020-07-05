@@ -1,0 +1,28 @@
+.jobs-container {
+    .job-card {
+        padding: 100px 0;
+
+        .image-container {
+            max-width: 800px;
+            min-width: 230px;
+            width: 80%;
+            margin: auto;
+            position: relative;
+        }
+
+        .body {
+            h4 {
+                text-transform: uppercase;
+                margin: 4rem auto 2rem auto;
+                text-align: center;
+                color: $white;
+            }
+
+            p {
+                max-width: 400px;
+                margin: auto;
+                color: $white;
+            }
+        }
+    }
+}

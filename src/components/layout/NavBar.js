@@ -23,7 +23,7 @@ const NavBar = (props) => {
                             <NavLink className="nav-link" activeClassName='active' to={`/home`}> {t('STR_3')}</NavLink>
                         </li>
                         <li className="nav-item dropdown">
-                            <NavLink className="nav-link" activeClassName='active' to={`/work`}> {t('STR_4')}</NavLink>
+                            <NavLink className="nav-link" activeClassName='active' to={`/projects`}> {t('STR_4')}</NavLink>
                         </li>
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link" activeClassName='active' to={`/about`}> {t('STR_5')}</NavLink>

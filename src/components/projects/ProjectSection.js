@@ -10,10 +10,9 @@ import P4 from './../../assets/projects/p4.png';
 import P5 from './../../assets/projects/p5.png';
 import P6 from './../../assets/projects/p6.png';
 
-const Projects = ({ project }) => {
+const ProjectSection = ({ project }) => {
 
     const { description, image, title, backColor } = project;
-    console.log(project);
 
     const { t } = useTranslation();
     let showImage = image === 'P1' ? P1 :
@@ -42,8 +41,8 @@ const Projects = ({ project }) => {
     );
 };
 
-Projects.propTypes = {
+ProjectSection.propTypes = {
     project: PropTypes.object.isRequired,
 };
 
-export default Projects;
+export default ProjectSection;

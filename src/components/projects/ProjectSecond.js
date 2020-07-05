@@ -1,12 +1,12 @@
 import React from 'react';
 // Components
-import Projects from './Projects';
+import ProjectSection from './ProjectSection';
 // Hooks
 import { useTranslation } from 'react-i18next';
 // Section data
-import jobs from './../../constants/projects.json';
+import jobs from '../../constants/projects.json';
 
-const WorkSecond = () => {
+const ProjectSecond = () => {
 
     const { t } = useTranslation();
 
@@ -15,11 +15,11 @@ const WorkSecond = () => {
             { t('') }
             {
                 jobs.map( project => (
-                    <Projects key={project.id} project={project} />
+                    <ProjectSection key={project.id} project={project} />
                 ))
             }
         </div>
     );
 };
 
-export default WorkSecond;
+export default ProjectSecond;
