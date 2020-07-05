@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 // Hooks
 import { useTranslation } from 'react-i18next';
 // Images
-import CVD from './../../assets/projects/cvd.png';
-import CVS from './../../assets/projects/cvs.png';
-import JL from './../../assets/projects/jl.png';
-import LP from './../../assets/projects/lp.png';
-import MWP from './../../assets/projects/mwp.png';
-import TSK from './../../assets/projects/tsk.png';
+import P1 from './../../assets/projects/p1.png';
+import P2 from './../../assets/projects/p2.png';
+import P3 from './../../assets/projects/p3.png';
+import P4 from './../../assets/projects/p4.png';
+import P5 from './../../assets/projects/p5.png';
+import P6 from './../../assets/projects/p6.png';
 
 const Projects = ({ project }) => {
 
@@ -16,11 +16,11 @@ const Projects = ({ project }) => {
     console.log(project);
 
     const { t } = useTranslation();
-    let showImage = image === 'CVD' ? CVD :
-        image === 'CVS' ? CVS :
-            image === 'JL' ? JL :
-                image === 'LP' ? LP :
-                    image === 'MWP' ? MWP : TSK;
+    let showImage = image === 'P1' ? P1 :
+        image === 'P2' ? P2 :
+            image === 'P3' ? P3 :
+                image === 'P4' ? P4 :
+                    image === 'P5' ? P5 : P6;
 
     return (
         <div className="col-12" style={{ backgroundColor: backColor }}>

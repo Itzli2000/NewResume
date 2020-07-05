@@ -7,8 +7,12 @@ import { useTranslation } from 'react-i18next';
 import jobs from './../../constants/projects.json';
 
 const WorkSecond = () => {
+
+    const { t } = useTranslation();
+
     return (
         <div className="row jobs-container">
+            { t('') }
             {
                 jobs.map( project => (
                     <Projects key={project.id} project={project} />

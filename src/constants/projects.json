@@ -2,42 +2,42 @@
     {
         "id": 0,
         "title": "WORK_DATA_5",
-        "image": "MWP",
+        "image": "P1",
         "description": "WORK_DATA_5D",
         "backColor": "#68bec5"
     },
     {
         "id": 1,
         "title": "WORK_DATA_4",
-        "image": "LP",
+        "image": "P2",
         "description": "WORK_DATA_4D",
         "backColor": "#a8bbf8"
     },
     {
         "id": 2,
         "title": "WORK_DATA_3",
-        "image": "JL",
+        "image": "P3",
         "description": "WORK_DATA_3D",
         "backColor": "#f0b102"
     },
     {
         "id": 3,
         "title": "WORK_DATA_1",
-        "image": "CVD",
+        "image": "P4",
         "description": "WORK_DATA_1D",
         "backColor": "#60cf77"
     },
     {
         "id": 4,
         "title": "WORK_DATA_2",
-        "image": "CVS",
+        "image": "P5",
         "description": "WORK_DATA_2D",
         "backColor": "#ab70b5"
     },
     {
         "id": 5,
         "title": "WORK_DATA_5",
-        "image": "TSK",
+        "image": "P6",
         "description": "WORK_DATA_5D",
         "backColor": "#53545a"
     }
