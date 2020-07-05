@@ -1,11 +1,15 @@
 import React from 'react';
 import NavBar from '../layout/NavBar';
+// Components
+import WorkFirst from './WorkFirst';
+import ContactSection from './../layout/ContactSection';
 
 const Work = (props) => {
     return (
-        <div>
+        <div className="top-section animate__animated animate__fadeIn" >
             <NavBar {...props} />
-            <p className="mt-5 pt-5 text-dark">desde work</p>
+            <WorkFirst />
+            <ContactSection />
         </div>
     );
 };

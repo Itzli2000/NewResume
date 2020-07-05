@@ -35,9 +35,20 @@ export function scrollPageTo(to, duration = 500) {
   });
 }
 
-export function calculate_age(dob) { 
+export function calculate_age(dob) {
   var diff_ms = Date.now() - dob.getTime();
-  var age_dt = new Date(diff_ms); 
+  var age_dt = new Date(diff_ms);
 
   return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+export function splitArray(array) {
+  let response = [];
+  const half = Math.ceil(array.length / 2);
+  const firstHalf = array.splice(0, half);
+  response.push(firstHalf);
+  const secondHalf = array.splice(-half);
+  response.push(secondHalf);
+  // Return a 2 positions array to destructure when used
+  return (response);
 }

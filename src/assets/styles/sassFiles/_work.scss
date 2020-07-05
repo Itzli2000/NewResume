@@ -1,0 +1,72 @@
+.workFirst {
+    padding: 100px 0 50px 0;
+
+    .info-container {
+        margin: auto;
+        h2 {
+            margin-bottom: 2rem;
+            // text-transform: uppercase;
+            font-size: $h1_font-size;
+            color: $accent;   
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .work-list-container {
+        margin: 0 50px;
+        margin-top: 1rem;
+
+        .work-card {
+            padding-left: 15px;
+            margin-bottom: 30px;
+            position: relative;
+
+            strong {
+                color: $secondary;
+            }
+
+            h5 {
+                margin: 10px 0;
+                color: $blackTitle;
+            }
+
+            p {
+                margin-bottom: 0;
+                color: $grey4;
+            }
+
+            &:not(:last-child)::before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                left: -27px;
+                width: 3px;
+                height: 100%;
+                background: $secondary;
+            }
+
+            &:after {
+                content: "\f0b1";
+                position: absolute;
+                top: 0;
+                left: -50px;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 100%;
+                text-align: center;
+                font-size: 20px;
+                font-family: 'FontAwesome';
+                background: $secondary;
+                color: #fff;
+                box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+                cursor: pointer;
+            }
+        }
+    }
+}

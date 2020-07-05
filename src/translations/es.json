@@ -55,5 +55,18 @@
     "FORM_ERROR_4": "Debes escribir un mensaje",
     "FORM_ERROR_4_1": "Tu mensaje es muy corto",
     "FORM_SENT": "Mensaje enviado, me pondre en contacto",
-    "FORM_NOT_SENT": "Ocurrio un error, intenta mas tarde"
+    "FORM_NOT_SENT": "Ocurrio un error, intenta mas tarde",
+    "WORK_DATA_1": "Globant México",
+    "WORK_DATA_1D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_2": "Minds With Purpose",
+    "WORK_DATA_2D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_3": "Atoms",
+    "WORK_DATA_3D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_4": "Zermat International",
+    "WORK_DATA_4D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_5": "Digimundo Technologies",
+    "WORK_DATA_5D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_F1": "Trabajo",
+    "WORK_F2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum posuere.",
+    "":""
 }
