@@ -40,40 +40,48 @@
 
 @keyframes mouseAnimate {
     0% {
-        top: 10px
+        top: 10px;
+        opacity: 1;
     }
 
     100% {
         top: 25px;
+        opacity: 0;
     }
 }
 
 @keyframes mouseAnimate {
     from {
         top: 10px;
+        opacity: 1;
     }
 
     to {
         top: 25px;
+        opacity: 0;
     }
 }
 
 @-moz-keyframes mouseAnimate {
     from {
         top: 10px;
+        opacity: 1;
     }
 
     to {
         top: 25px;
+        opacity: 0;
     }
 }
 
 @-webkit-keyframes mouseAnimate {
     from {
         top: 10px;
+        opacity: 1;
     }
 
     to {
         top: 25px;
+        opacity: 0;
     }
 }
