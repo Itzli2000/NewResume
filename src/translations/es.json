@@ -27,6 +27,20 @@
     "STR_19": "Desarrollo",
     "STR_20": "Lo que sé",
     "STR_21": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "WORK_F1": "Trabajo",
+    "WORK_F2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus est, finibus ut congue sed, faucibus ut dui. Sed congue nisl dolor, id dapibus leo elementum posuere.",
+    "WORK_F3": "",
+    "WORK_F": "",
+    "WORK_DATA_1": "Globant México",
+    "WORK_DATA_1D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_2": "Minds With Purpose",
+    "WORK_DATA_2D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_3": "Atoms",
+    "WORK_DATA_3D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_4": "Zermat International",
+    "WORK_DATA_4D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
+    "WORK_DATA_5": "Digimundo Technologies",
+    "WORK_DATA_5D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
     "": "",
     "": "",
     "": "",
@@ -68,5 +82,5 @@
     "PROJECT_DATA_4D": "Envío y recepción de infromación usando peticiones HTTP, para interactuar con el usuario",
     "PROJECT_DATA_5": "Digimundo Technologies",
     "PROJECT_DATA_5D": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eveniet incidunt quidem illum repellat, a nemo cumque optio asperiores tempora delectus cupiditate",
-    "":""
+    "": ""
 }

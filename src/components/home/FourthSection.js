@@ -16,7 +16,7 @@ const FourthSection = () => {
     return (
         <div className="container">
             <div className="row fourth">
-                <div className="text-center info-container">
+                <div className="col-12 text-center info-container">
                     <h2>{t('WORK_F1')}</h2>
                     <p>{t('WORK_F2')}</p>
                 </div>

@@ -18,7 +18,6 @@ const ProjectSection = ({ project }) => {
     const { t } = useTranslation();
     let showImage = [];
 
-    console.log(image)
     image.forEach(img => {
         let currentImage = img === 'P1' ? P1 :
             img === 'P2' ? P2 :
@@ -36,8 +35,8 @@ const ProjectSection = ({ project }) => {
                     <div className="image-container">
                         {
                             (showImage && showImage.length > 0) ?
-                                showImage.map((image) => (
-                                    <img className="img-fluid" src={image} alt={t(title)} />
+                                showImage.map((image, index) => (
+                                    <img key={index} className="img-fluid" src={image} alt={t(title)} />
                                 ))
                                 : null
                         }

@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from "react-router-dom";
 // Components
-import LanguageSelector from './../../components/layout/LanguageSelector';
+import LanguageSelector from './LanguageSelector';
 
 const NavBar = (props) => {
     // console.log(props)
