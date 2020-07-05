@@ -1,3 +1,24 @@
+.proyect-first {
+    padding: 100px 0 50px 0;
+
+    .info-container {
+        margin: auto;
+
+        h2 {
+            margin-bottom: 2rem;
+            // text-transform: uppercase;
+            font-size: $h1_font-size;
+            color: $accent;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
 .jobs-container {
     .job-card {
         padding: 100px 0;
@@ -5,9 +26,39 @@
         .image-container {
             max-width: 800px;
             min-width: 230px;
-            width: 80%;
             margin: auto;
             position: relative;
+            left: 0;
+            top: 0;
+
+            img {
+                position: relative;
+                left: 0;
+                top: 0;
+
+                &:nth-child(2) {
+                    position: absolute;
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                    -webkit-transition: opacity 1s ease-in-out;
+                    -moz-transition: opacity 1s ease-in-out;
+                    -ms-transition: opacity 1s ease-in-out;
+                    -o-transition: opacity 1s ease-in-out;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    transform: translateZ(0) scale(1, 1);
+                    -webkit-transform: translateZ(0) scale(1, 1);
+                    -moz-transform: translateZ(0) scale(1, 1);
+                    -ms-transform: translateZ(0) scale(1, 1);
+                    -o-transform: translateZ(0) scale(1, 1);
+                }
+            }
+
+            &:hover {
+                img:nth-child(2) {
+                    opacity: 1;
+                }
+            }
         }
 
         .body {

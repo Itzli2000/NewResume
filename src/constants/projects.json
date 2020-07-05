@@ -1,44 +1,30 @@
 [
     {
         "id": 0,
-        "title": "WORK_DATA_5",
-        "image": "P1",
-        "description": "WORK_DATA_5D",
-        "backColor": "#68bec5"
+        "title": "PROJECT_DATA_1",
+        "image": ["P5", "P2"],
+        "description": "PROJECT_DATA_1D",
+        "backColor": "#ec5c5c"
     },
     {
         "id": 1,
-        "title": "WORK_DATA_4",
-        "image": "P2",
-        "description": "WORK_DATA_4D",
-        "backColor": "#a8bbf8"
+        "title": "PROJECT_DATA_2",
+        "image": ["P3", "P4"],
+        "description": "PROJECT_DATA_2D",
+        "backColor": "#afbf8a"
     },
     {
         "id": 2,
-        "title": "WORK_DATA_3",
-        "image": "P3",
-        "description": "WORK_DATA_3D",
-        "backColor": "#f0b102"
+        "title": "PROJECT_DATA_3",
+        "image": ["P7", "P6"],
+        "description": "PROJECT_DATA_3D",
+        "backColor": "#4c5052"
     },
     {
         "id": 3,
-        "title": "WORK_DATA_1",
-        "image": "P4",
-        "description": "WORK_DATA_1D",
-        "backColor": "#60cf77"
-    },
-    {
-        "id": 4,
-        "title": "WORK_DATA_2",
-        "image": "P5",
-        "description": "WORK_DATA_2D",
-        "backColor": "#ab70b5"
-    },
-    {
-        "id": 5,
-        "title": "WORK_DATA_5",
-        "image": "P6",
-        "description": "WORK_DATA_5D",
-        "backColor": "#53545a"
+        "title": "PROJECT_DATA_4",
+        "image": ["P1", "P1"],
+        "description": "PROJECT_DATA_4D",
+        "backColor": "#65a1fc"
     }
 ]
