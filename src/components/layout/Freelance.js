@@ -11,7 +11,6 @@ const Freelance = () => {
     const { t } = useTranslation();
     const { available } = freelanceAvailable;
 
-    console.log(available)
     if(!available) return null;
 
     return (
