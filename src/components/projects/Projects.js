@@ -4,6 +4,7 @@ import NavBar from '../layout/NavBar';
 import ProjectFirst from './ProjectFirst';
 import ProjectSecond from './ProjectSecond';
 import ContactSection from '../layout/ContactSection';
+import Freelance from './../layout/Freelance';
 
 const Projects = (props) => {
     return (
@@ -11,6 +12,7 @@ const Projects = (props) => {
             <NavBar {...props} />
             <ProjectFirst />
             <ProjectSecond />
+            <Freelance />
             <ContactSection />
         </div>
     );

@@ -1,5 +1,8 @@
-#contatc {
-    background-color: rgba($secondary, 0.1);
+.freelance {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: rgba($blackTitle, 0.1);
+
     .info-container {
         h2 {
             margin-top: 3rem;
@@ -20,15 +23,13 @@
             margin: 0 auto;
             margin-bottom: 3rem;
         }
-    }
 
-    form {
-        .form-btn {
+        .btn {
             @include customButton($border: 1px solid $primary,
                 $borderRadius: 20px,
                 $textColor: $primary,
                 $padding: 5px 10px,
-                $backColor: rgba($secondary, 0.1),
+                $backColor: $white,
                 $hoverBackColor: $primary,
                 $hoverTextColor: $white,
                 $hoverBorder: 1px solid transparent);

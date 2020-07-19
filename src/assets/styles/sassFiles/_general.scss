@@ -184,6 +184,7 @@ button {
   -o-transitiobackground-color: 0.25s ease-in-out;
   -ms-transition: background-color 0.25s ease-in-out;
   -o-transition: background-color 0.25s ease-in-out;
+  z-index: 5;
 
   // &.bg-light {
   //   background-color: rgba($primary, 0.1) !important;
