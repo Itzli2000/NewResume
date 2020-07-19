@@ -34,6 +34,10 @@
                 $hoverTextColor: $white,
                 $hoverBorder: 1px solid transparent);
         }
+
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 5rem;
+        }
     }
 
     .contact-information {
@@ -62,17 +66,18 @@
 
             &:hover {
                 @include boxShadowMixin($offX: map-get($hover_shadow, 'offX'),
-                $offY: map-get($hover_shadow, 'offY'),
-                $blur: map-get($hover_shadow, 'blur'),
-                $spread: map-get($hover_shadow, 'spread'),
-                $color: map-get($hover_shadow, 'color'),
-                $alpha: map-get($hover_shadow, 'alpha'));
+                    $offY: map-get($hover_shadow, 'offY'),
+                    $blur: map-get($hover_shadow, 'blur'),
+                    $spread: map-get($hover_shadow, 'spread'),
+                    $color: map-get($hover_shadow, 'color'),
+                    $alpha: map-get($hover_shadow, 'alpha'));
             }
-            
+
 
             p {
                 margin-bottom: 2rem;
                 color: $blackTitle;
+                font-weight: bold;
 
                 &:hover {
                     span a {
@@ -90,10 +95,12 @@
                         content: ': ';
                     }
 
+                    font-weight: normal;
                     margin-left: 1rem;
-
+                    color: $secondary;
+                    
                     a {
-                        color: $blackTitle;
+                        color: $secondary;
                         transition: all 0.3s ease-in-out;
                         -webkit-transition: all 0.3s ease-in-out;
                         -moz-transition: all 0.3s ease-in-out;
