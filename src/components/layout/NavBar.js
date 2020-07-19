@@ -25,9 +25,9 @@ const NavBar = (props) => {
                         <li className="nav-item dropdown">
                             <NavLink className="nav-link" activeClassName='active' to={`/projects`}> {t('STR_4')}</NavLink>
                         </li>
-                        <li className="nav-item dropdown">
+                        {/* <li className="nav-item dropdown">
                             <NavLink className="nav-link" activeClassName='active' to={`/about`}> {t('STR_5')}</NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item language-item">
                             <div >
                                 <LanguageSelector />

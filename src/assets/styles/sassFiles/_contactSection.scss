@@ -45,30 +45,62 @@
             padding-left: 6rem;
         }
 
-        p {
-            margin-bottom: 2rem;
+        .contact-card {
+            border-radius: 1rem;
+            -webkit-border-radius: 1rem;
+            -moz-border-radius: 1rem;
+            -ms-border-radius: 1rem;
+            -o-border-radius: 1rem;
+            background-color: $white;
+            @include boxShadowMixin($offX: map-get($pop_shadow, 'offX'),
+                $offY: map-get($pop_shadow, 'offY'),
+                $blur: map-get($pop_shadow, 'blur'),
+                $spread: map-get($pop_shadow, 'spread'),
+                $color: map-get($pop_shadow, 'color'),
+                $alpha: map-get($pop_shadow, 'alpha'));
+            padding: 6rem 3rem;
 
             &:hover {
-                span a {
-                    color: $accent;
-                }
+                @include boxShadowMixin($offX: map-get($hover_shadow, 'offX'),
+                $offY: map-get($hover_shadow, 'offY'),
+                $blur: map-get($hover_shadow, 'blur'),
+                $spread: map-get($hover_shadow, 'spread'),
+                $color: map-get($hover_shadow, 'color'),
+                $alpha: map-get($hover_shadow, 'alpha'));
             }
+            
 
-            span {
-                &:before {
-                    content: ': ';
+            p {
+                margin-bottom: 2rem;
+                color: $blackTitle;
+
+                &:hover {
+                    span a {
+                        color: $accent;
+                    }
                 }
 
-                margin-left: 1rem;
+                i {
+                    font-size: 2rem;
+                    margin-right: 1rem;
+                }
 
-                a {
-                    color: $blackTitle;
-                    transition: all 0.3s ease-in-out;
-                    -webkit-transition: all 0.3s ease-in-out;
-                    -moz-transition: all 0.3s ease-in-out;
-                    -ms-transition: all 0.3s ease-in-out;
-                    -o-transition: all 0.3s ease-in-out;
-                    text-decoration: none;
+                span {
+                    &:before {
+                        content: ': ';
+                    }
+
+                    margin-left: 1rem;
+
+                    a {
+                        color: $blackTitle;
+                        transition: all 0.3s ease-in-out;
+                        -webkit-transition: all 0.3s ease-in-out;
+                        -moz-transition: all 0.3s ease-in-out;
+                        -ms-transition: all 0.3s ease-in-out;
+                        -o-transition: all 0.3s ease-in-out;
+                        text-decoration: none;
+                    }
                 }
             }
         }
