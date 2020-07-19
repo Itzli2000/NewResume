@@ -1,9 +1,5 @@
-:root {
+html {
   font-size: $root_size;
-
-  @media screen and (max-width: 1024px) {
-    font-size: 12px;
-  }
 }
 
 // Font family weights 300, 400, 600
@@ -16,6 +12,10 @@ body {
 
   &.overflow-hidden {
     overflow: hidden;
+  }
+
+  &>* {
+    font-size: $general_fz;
   }
 }
 
@@ -85,15 +85,6 @@ input[type=number] {
 }
 
 input,
-label,
-input,
-textarea,
-button,
-a {
-  font-size: $general_fz;
-}
-
-input,
 select,
 textarea,
 button,
@@ -101,6 +92,7 @@ button,
   outline: none !important;
   box-shadow: none !important;
   caret-color: $secondary;
+  font-size: $general_fz !important;
 
   &:focus,
   &:active {

@@ -19,7 +19,7 @@ const MainSection = ({scrollTo}) => {
         >
             <div className="main-section">
                 <div className="badge badge-light animate__animated animate__fadeInUp">{t('STR_8')}</div>
-                <p className="typer animate__animated animate__fadeInUp">
+                <h1 className="typer animate__animated animate__fadeInUp">
                     {t('STR_9')} &nbsp;
                     <Typed
                         strings={strings}
@@ -27,7 +27,7 @@ const MainSection = ({scrollTo}) => {
                         backSpeed={70}
                         loop
                     />
-                </p>
+                </h1>
                 <p className="description animate__animated animate__fadeInUp">{t('STR_10')}</p>
                 <div className="scroll-down" onClick={()=>scrollTo('.second', 1000)}></div>
             </div>

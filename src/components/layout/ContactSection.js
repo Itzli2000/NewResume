@@ -19,9 +19,7 @@ const ContactSection = () => {
                 <div className="col-12 col-lg-6 form-container">
                     <ContactForm />
                 </div>
-                <div className="col-12 col-lg-6">
-                    <ContactInformation />
-                </div>
+                <ContactInformation />
             </div>
         </div>
     );
