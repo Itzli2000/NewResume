@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "^4.1.0",
     "i18next": "^19.5.1",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.0.1",
@@ -17,7 +16,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-svg": "^11.0.28",
-    "react-typed": "^1.2.0"
+    "react-typed": "^1.2.0",
+    "sass": "^1.49.7"
   },
   "scripts": {
     "start": "react-scripts start",
